@@ -57,8 +57,10 @@ OPTIONS (= is mandatory):
         'Stopped' - waits for resource to reach 'Stopped' state
         'Master' - waits for resource to reach 'Master' state
         'Slave' - waits for resource to reach 'Slave' state
+        'Promoted' - waits for resource to reach 'Promoted' state
+        'Unpromoted' - waits for resource to reach 'Unpromoted' state
         (Choices: present, absent, Started, Stopped, Master,
-        Slave)[Default: present]
+        Slave, Promoted, Unpromoted)[Default: present]
         type: str
 
 - timeout
