@@ -34,9 +34,11 @@ options:
       - "'Stopped' - waits for resource to reach 'Stopped' state"
       - "'Master' - waits for resource to reach 'Master' state"
       - "'Slave' - waits for resource to reach 'Slave' state"
+      - "'Promoted' - waits for resource to reach 'Promoted' state"
+      - "'Unpromoted' - waits for resource to reach 'Unpromoted' state"
     required: false
     default: present
-    choices: ['present', 'absent', 'Started', 'Stopped', 'Master', 'Slave']
+    choices: ['present', 'absent', 'Started', 'Stopped', 'Master', 'Slave', 'Promoted', 'Unpromoted']
     type: str
   resource:
     description:
